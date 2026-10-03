@@ -1,7 +1,7 @@
 # Console Tic-Tac-Toe
 
 A two-player Tic-Tac-Toe game written in C# and played in the console.   
-A project for the Data Structures and Algorithm course of Centria University of Applied Sciences, acadmic year 2026-2027.
+A project for the Algorithms and Datastructures course at Centria AMK, academic year 2026-2027.
 
 ![Gameplay demo](assets/demo.gif)
 

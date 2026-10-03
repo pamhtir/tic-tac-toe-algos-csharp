@@ -1,6 +1,7 @@
 # Console Tic-Tac-Toe
 
-A two-player Tic-Tac-Toe game written in C# and played in the console.
+A two-player Tic-Tac-Toe game written in C# and played in the console.   
+A project for the Data Structures and Algorithm course of Centria University of Applied Sciences, acadmic year 2026-2027.
 
 ![Gameplay demo](assets/demo.gif)
 
@@ -53,5 +54,5 @@ The program was manually tested for:
 - Winning games
 - Draw games
 - Non-numeric input
-- Numbers outside the 1–9 range
+- Numbers outside the 1-9 range
 - Attempts to select an occupied position

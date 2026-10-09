@@ -108,7 +108,7 @@
     }
     
 
-       static bool IsWinningLine(char[] board, char player, int a, int b, int c)
+    static bool IsWinningLine(char[] board, char player, int a, int b, int c)
     {
         return board[a] == player &&
                board[b] == player &&

@@ -42,7 +42,7 @@ dotnet run
 - C# methods and arrays
 - Loops and conditional statements
 - Console input and output
-- Input validation with `int.TryParse`
+- Input validation using string comparisons and conditional statements
 - Array indexing
 - Win and draw detection
 - Breaking a problem into small methods

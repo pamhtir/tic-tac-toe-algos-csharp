@@ -48,34 +48,67 @@
 
     static int GetValidMove(char[] board)
     {
-        while(true)
+        while (true)
         {
-            Console.WriteLine("Make a move by entering a number between 1-9");
-            
-            if (!int.TryParse(Console.ReadLine(), out int position))
-            {
-                Console.WriteLine("Invalid move!");
-                continue;
-            }
-            if (position < 1 || position > 9)
-            {
-                Console.WriteLine("Number must be between 1-9!");
-                continue;
-            }
+            Console.WriteLine("Enter a move with numbers from 1 to 9:");
+            string input = Console.ReadLine() ?? "";
 
-            int index = position - 1;
+            int index;
+
+            if (input == "1")
+            {
+                index = 0;
+            }
+            else if (input == "2")
+            {
+                index = 1;
+            }
+            else if (input == "3")
+            {
+                index = 2;
+            }
+            else if (input == "4")
+            {
+                index = 3;
+            }
+            else if (input == "5")
+            {
+                index = 4;
+            }
+            else if (input == "6")
+            {
+                index = 5;
+            }
+            else if (input == "7")
+            {
+                index = 6;
+            }
+            else if (input == "8")
+            {
+                index = 7;
+            }
+            else if (input == "9")
+            {
+                index = 8;
+            }
+            else
+            {
+                Console.WriteLine("Invalid move. Move must be between 1-9.");
+                continue;
+            }
 
             if (board[index] == 'X' || board[index] == 'O')
             {
                 Console.WriteLine("Position already taken!");
                 continue;
             }
-            
+
             return index;
         }
     }
+    
 
-    static bool IsWinningLine(char[] board, char player, int a, int b, int c)
+       static bool IsWinningLine(char[] board, char player, int a, int b, int c)
     {
         return board[a] == player &&
                board[b] == player &&
